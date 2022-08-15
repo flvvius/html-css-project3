@@ -1,0 +1,142 @@
+* {
+    font-family: sans-serif;
+  }
+  
+  nav, .main-section {
+    display: inline-block;
+  }
+  
+  #header {
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgb(102, 98, 98);
+    width: 300px;
+    float: left;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+  
+  
+  h1 {
+    border-bottom: 1px solid rgb(102, 98, 98);
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 15px; 
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  
+  .main-section {
+    width: calc(100% - 350px);
+    float: right;
+    
+  }
+  
+  a, a:hover, a:visited {
+    text-decoration: none;
+    color: rgb(102, 98, 98);
+    padding-left: 30px;
+  }
+  
+  hr {
+    width: 300px;
+    color: rgb(102, 98, 98);
+  }
+  
+  nav div:not(:first-child) {
+    height: 30px;
+    position: relative;
+    top: 5px;
+    
+  }
+  nav div {
+    height: 38px;
+  }
+  
+  nav div:first-child {
+    position: relative;
+    top: 13px;
+  }
+  
+  .code {
+    background-color: rgb(249, 245, 245);
+    padding: 18px 25px;
+    margin-right: 40px;
+    margin-left: 14px;
+    border-radius: 5px;
+    font-family: Courier, sans-serif;
+    line-height: 20px;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  
+  ul li {
+    margin: 15px 0;
+  }
+  
+  h2 {
+    position: relative;
+    left: -15px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  
+  #ref, #ref:visited {
+    text-decoration: underline;
+    padding-left: 0;
+  }
+  
+  @media (max-width: 716px) {
+    #header {
+      width: 100%;
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 250px;
+      display: block;
+      text-align: center;
+      border-bottom: 3px solid rgb(102, 98, 98);
+    }
+
+    h1 {
+        z-index: 11;
+    }
+  
+    .main-section {
+      width: 100%;
+      display: block;
+    }  
+    
+    nav {
+        border-top: 3px solid rgb(102, 98, 98);
+    }
+    nav div {
+      display: block; 
+    }
+  
+    main {
+      margin-top: 250px;
+    }
+  
+    hr {
+    width: 100vw;
+    color: rgb(102, 98, 98);
+  }
+  
+  h2 {
+    left: 14px;
+  }
+  p, ul li {
+    margin-left: 25px;
+  }
+  
+  .code {
+    margin-left: 30px;
+  }
+  }
